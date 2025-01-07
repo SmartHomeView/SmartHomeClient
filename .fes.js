@@ -20,7 +20,7 @@ const timeStamp = new Date().getTime()
 const combinedIsCustomElement = (tag) => tag.startsWith('iconify-icon') || templateCompilerOptions.template.compilerOptions.isCustomElement(tag)
 
 export default defineBuildConfig({
-    title: 'TvT.js',
+    title: 'SmartHomeClient',
     publicPath: './',
     access: {
         roles: {
