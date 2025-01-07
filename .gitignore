@@ -1,0 +1,53 @@
+.DS_Store
+.cache
+
+/dist
+
+# dependencies
+/node_modules/*
+/coverage
+
+# fes
+/src/.fes
+/src/.fes-production
+/src/.fes-test
+.env.local
+
+#不排除 排除alienkitty 和 oimophysics  基于:https://github.com/alienkitty/alien.js 库
+#因为这两个库从npm包很难下载，且有的下架了
+#!/node_modules/@alienkitty/
+#!/node_modules/oimophysics/
+yarn.lock
+yarn-error.log
+package-lock.json
+
+# 排除tvtViewHelper、 tvtSceneCreator、 eMRIscand、digitalMapBlock、tvtAirport、tvtSubstation、networkLinkTopology 等插件 可通过插件中心下载
+src/plugins/eMRIscan
+public/plugins/eMRIscan
+src/plugins/digitalMapBlock
+public/plugins/digitalMapBlock
+src/plugins/tvtAirport
+public/plugins/tvtAirport
+src/plugins/tvtSubstation
+public/plugins/tvtSubstation
+src/plugins/networkLinkTopology
+public/plugins/networkLinkTopology
+
+# 排除resourceManager、 tvtCharts、showCabinet、tvtVolumeRendering、dxf2mesh 等插件 <但可演示> 可通过插件中心下载
+src/plugins/tvtViewHelper
+public/plugins/tvtViewHelper
+src/plugins/tvtSceneCreator
+public/plugins/tvtSceneCreator
+src/plugins/resourceManager
+src/plugins/tvtCharts
+public/plugins/tvtCharts
+src/plugins/showCabinet
+public/plugins/showCabinet
+src/plugins/tvtVolumeRendering
+public/plugins/tvtVolumeRendering
+src/plugins/dxf2mesh
+public/plugins/dxf2mesh
+
+# 排除安装插件包
+!pluginMaker/install/请把下载的插件包放在这里。
+pluginMaker/install
